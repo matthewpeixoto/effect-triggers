@@ -35,6 +35,12 @@ div {
 
   background-color: limegreen;
   opacity: 0;
+
+  transition: opacity 200ms linear;
+}
+
+.js-show-hide {
+  opacity: 1;
 }
 
 .diamond {
@@ -45,6 +51,12 @@ div {
 
   background-color: hotpink;
   transform: rotate(45deg);
+
+  transition: right 200ms linear;
+}
+
+.js-move {
+  right: 2em;
 }
 
 .panel {
@@ -58,11 +70,17 @@ div {
 
   color: darkgoldenrod;
   text-align: center;
+
+  transition: max-height 200ms linear;
 }
 
 .panel h2 {
   margin: 0;
   padding: 3rem 0;
+}
+
+.js-collapse-expand {
+  max-height: 0;
 }
 
 .circle {
@@ -72,6 +90,39 @@ div {
 
   background-color: orange;
   border-radius: 50%;
+}
+
+.js-bounce {
+  animation: bounce 1s linear;
+}
+
+@keyframes bounce {
+
+  0% {
+    top: 0;
+    left: 425px;
+  }
+
+  25% {
+    top: 50px;
+    left: 375px;
+  }
+
+  50% {
+    top: 10px;
+    left: 325px;
+  }
+
+  75% {
+    top: 40px;
+    left: 275px;
+  }
+
+  100% {
+    top: 20px;
+    left: 225px;
+  }
+
 }
 
 .list {
