@@ -17,3 +17,10 @@ $('.btn-bounce').on('click', function () {
 $('.circle').on('animationend', function () {
   $('.circle').removeClass('js-bounce');
 });
+
+$('.btn-append').on('click', function () {
+  var $li = $('<li>');
+
+  $li.html('New List Item');
+  $('.list').append($li);
+});
